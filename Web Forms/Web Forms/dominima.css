@@ -1,0 +1,239 @@
+/* CSS reset*/
+* {
+    padding: 0;
+    margin: 0;  
+}
+
+/* box model fix here*/
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    /*so that it doesn't show up blue and purple*/
+}
+h1, h2, h3 {
+    /*using my Google font here*/
+    font-family: 'Jura', sans-serif;
+}
+header {
+    height: 20vh;
+    text-align: center;
+    padding-top: 5vh;
+    width: 100vw;
+    background-color: #00838f;
+    color: white;
+}
+header h1 {
+    font-size: 60px;
+}
+header h2{
+    padding-bottom: 30px;
+    justify-content: space-around;
+}
+nav {
+    background-color: silver;
+    width: 100vw;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+nav ul.menu{
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+nav ul.menu li{
+    /*to make the nav list horizontal*/
+    display: inline-block;
+    float: none;
+    margin: 0px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+
+}
+nav ul.menu li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 15px;
+    padding-left: 20px;
+    border-right: 1px solid;
+}
+nav ul.menu li.active a {
+    background-color: darkgrey;
+}
+nav a:hover {
+    /*so that when the user hovers their mouse over the link, the cursor shape will change and it'll be highlighted*/
+    cursor: pointer;
+    background: white;
+}
+main {
+    margin: 10px;
+}
+main h1 {
+    padding: 15px;
+}
+/*Styling Images */
+
+figure.animals{
+    margin: 0 0 0 2%;
+    padding: 0.5em;
+    float: right;
+    border: 1px solid black;
+    width: 40%;
+    font-family: 'Jura', sans-serif;
+}
+figure.animals img{
+    width: 100%;
+}
+div.productGallery {
+    justify-content: center;
+}
+figure.products {
+    width: 300px;
+    height: 330px;
+    margin: 5px;
+    padding: 0.5em;
+    margin-left: 55px;
+    border: 1px solid black;
+    float: left;
+   
+}
+figure.products img{
+    width: 100%;
+    
+}
+figcaption {
+    text-align: center;
+    
+}
+figure.products figcaption{
+    font-size: 13px;
+    
+}
+figure.products figcaption span{
+    display:block;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+main p {
+    padding: 15px;
+} 
+main h2 {
+    padding: 15px;
+}
+.description {
+    padding-left: 15px;
+}
+p {
+    font-family: 'Jura', sans-serif;
+}
+main p.signature{
+    padding: 10px;
+}
+blockquote {
+    /*decided to give the review a different font than anything else*/
+    font-family: 'Amiri', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 40px;
+    color: mediumpurple;
+}
+main ul.materials {
+    padding-left: 40px;
+    font-family: 'Jura', sans-serif;
+    list-style-type: square;
+}
+main ul.types{
+    /*changed the list type from ordered to unordered so that I can use two different bullet point styles*/
+    padding-left: 40px;
+    font-family: 'Jura', sans-serif;
+    list-style-type: circle;
+}
+dl {
+    font-family: 'Jura', sans-serif;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+dl dt{
+    padding: 5px;
+}
+dl dd {
+    padding: 5px;
+}
+div.keepOpen{
+    clear: both;
+    padding-top: 15px;
+}
+footer p{
+    text-align: center;
+    padding-top: 5px;
+    background-color: #00838f;
+    padding-bottom: 5px;
+    color: rgb(255,255,255);
+}
+form.testForm fieldset {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 10px;
+}
+form.testForm legend{
+    font-size: 15px;
+    color: black;
+    font-family: 'Jura', sans-serif;
+}
+form.testForm span.name{
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+}
+form.testForm span.contact {
+    font-family: 'Jura', sans-serif;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+form.testForm .myInput {
+    background-color: gainsboro;
+    border-radius: 1rem;
+    padding: 5px;
+}
+form.testForm .submit {
+    background-color: gainsboro;
+    border-radius: 1rem;
+    padding: 5px;
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+    display: block;
+}
+form.testForm span.reason {
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-left: 2px;
+}
+form.testForm span.customer{
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+form.testForm .textbox{
+    background-color: gainsboro;
+}
+body .confirm {
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
