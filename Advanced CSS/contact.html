@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+   <link rel="stylesheet" href="dominima.css"> 
+
+    <head>
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Julius+Sans+One|Jura:300" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATTEND: What is 3D-Printing</title> 
+</head>
+<body>    
+    <div id="wrapper">
+<header class="contactHead">
+        <h1>DominimaDesign</h1>
+        <h2>3D-Printed Designs for the Home</h2>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">About</a></li>
+            <li><a href="attend.html">What is 3D-Printing</a></li>
+            <li ><a href="ourItems.html">Our Products</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<main>
+<form class="testForm" action="FormToEmail.php" method="post" enctype="multipart/form-data" name="contact">
+    <fieldset>
+        <legend>Name</legend>
+    <label><span class="name">First Name:</span><input class="myInput" name="first" value="" type="text" placeholder="John" required></label>
+    
+    <label><span class="name">Last Name:</span> <input class="myInput" name="last" value="" type="text" placeholder="Smith"></label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Contact Information</legend>
+    <label><span class="contact">Email:</span><input class="myInput" type="email" name="email" value="" placeholder="example@email.com" required></label>
+    
+    <label><span class="contact">Age: </span> <input class="myInput" type="number" name="age" value=""></label>
+    
+    <label><span class="contact">Phone: </span><input class="myInput" type="tel" name="telephone" value="" placeholder="123-555-6789" pattern="[0-9-. ]{10}"></label>
+    </fieldset>
+    
+    <fieldset>
+    <legend>Are you a new or returning customer?</legend>
+    <label><input type="radio" name="new" value="New"><span class="customer">New</span></label>
+    <label><input type="radio" name="return" value="Returning"><span class="customer" >Returning</span></label>
+    </fieldset>
+    
+    <fieldset><legend>Have you purchased one of our products?</legend>
+    <select>
+        <option value="none">None</option>
+        <option value="animal">Animal</option>
+        <option value="car">Car</option>
+        
+        </select>
+    </fieldset>
+        
+    <fieldset>
+    <legend>What is your reason for contact?</legend>
+    <label><input type="checkbox" name="reason" value="product"><span class="reason">Product Questions</span></label>
+    
+    <label><input type="checkbox" name="reason" value="order"><span class="reason">Ordering Questions</span></label>
+    
+    <label><input type="checkbox" name="reason" value="general"><span class="reason">General Questions</span></label>
+    
+    <label><input type="checkbox" name="reason" value="other"><span class="reason">Other</span></label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Message</legend>
+    <textarea class="textbox" rows="10" cols="50"></textarea>
+        
+    <input class="submit" type="submit" name="submit" value="SUBMIT">
+    </fieldset>
+    
+    <input type="hidden" name="subject" value="website contact">
+    <input type="hidden" name="redirect" value="confirm.html">
+    
+</form>
+ </main>
+   
+    <footer>
+        <p>&copy; 2018 &bull; DominimaDesign &bull; Built by Natalie Zollinger</p>
+    </footer>
+</div> <!--end wrapper -->
+</body>
+</html>
