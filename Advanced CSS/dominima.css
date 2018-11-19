@@ -114,6 +114,7 @@ body {
     background-image: url(Picture3.png);
     background-repeat:repeat-x;
 }
+/*WRAPPER*/
 div#wrapper {
     max-width: 1575px;
     margin: 0 auto;
@@ -294,4 +295,45 @@ body .confirm {
     margin-left: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+/*find store page */
+iframe.mymap{
+    border: 1px solid #666;
+    width: 95%;
+    margin-left: 2%;
+    height: 500px;
+}
+/*our printer page */
+.iframe {
+    height: 300px;
+    width: 100%;
+}
+/*our most popular */
+table{
+    border: 1px solid black;
+    box-shadow: 1px 3px 10px #456;
+    background-color: darkgray;
+    color: white;
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+}
+table th{
+    background-color:teal;
+    padding: .5rem;
+}
+table td{
+    padding: .5rem;
+    border-bottom: solid #567 1px;
+}
+table tr:nth-child(even){
+    background-color: lightgray;
+}
+table tr:hover{
+    background-color: white;
+    color: black;
 }
