@@ -17,7 +17,7 @@
     </header>
     <nav>
         <ul class="menu">
-            <li class="active"><a href="index.html">About</a></li>
+            <li><a href="index.html">About</a></li>
             <li><a href="attend.html">What is 3D-Printing</a></li>
             <li><a href="ourItems.html">Our Products</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -28,15 +28,31 @@
     </nav>
     <main>
        
-        <h1>Our Printer</h1>   <!-- A bit of background to the user about our store -->
+        <h1>Our Printer</h1>  
+        <h2>Our printer would like to say hello with a little song!</h2>
+        <audio controls>
+            <source src="New-Recording-3.ogg" type="audio/ogg">
+            <source src="New-Recording-3.mp3" type="audio/mpeg">
+            Your browser is too old to support the audio files, sorry!
+        </audio>
         <iframe class="iframe" src="https://www.prusaprinters.org"></iframe>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hwNIzQLtHnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+        <div>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/hwNIzQLtHnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div class="keepOpen"></div>
     </main>
     <footer>
         <p>&copy; 2018 &bull; DominimaDesign &bull; Built by Natalie Zollinger</p>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129727687-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129727687-1');
+</script>
     </footer>
     </div>  <!--end wrapper -->
 </body>
